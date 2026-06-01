@@ -1,0 +1,20 @@
+myung.ai — 프론트 정적 빌드 (테스트용)
+=======================================
+
+이 폴더는 빌드 완료된 정적 사이트입니다. npm install 불필요.
+브라우저로 HTML을 더블클릭하면 스타일이 깨지므로, 아래처럼 간단한 서버로 여세요.
+
+▶ 방법 1 — Python (Mac/Linux 기본 설치)
+   터미널에서 이 폴더로 이동 후:
+       python3 -m http.server 8080
+   브라우저에서 열기:  http://localhost:8080
+
+▶ 방법 2 — Node (설치돼 있다면)
+       npx serve .
+   안내되는 주소(예: http://localhost:3000) 열기
+
+시작 화면은 자동으로 /onboarding 으로 이동합니다.
+처음부터 다시 보려면: 브라우저 콘솔에서 localStorage.clear() 후 새로고침.
+
+참고: 이 빌드는 프론트 전용이라 이메일 알림(/api/notify)은 동작하지 않습니다(무시됨).
+풀스택(이메일 포함)으로 보려면 myung-ai.zip 으로 npm install && npm run dev 하세요.
